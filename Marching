@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>Marching Step Calculator</title>
+		<link rel="stylesheet" type="text/css" href="public.css">
+	</head>
+	<body>
+		<header>
+			<div class="Flexy">
+				<a href="#">Home</a>
+				<a href="./about.html">About</a>
+			</div>
+		</header>
+
+		<div class="Flexy">
+			<div class="MarchFrom">
+				<select class="Side"  name="SideFrom">
+					<option value="left">Stage Left</option>
+					<option value="right">Stage Right</option>
+				</select>
+				<input type="text" name="HorizontalStepFrom"  placeholder="Steps">
+				<select class="RelativeYardline" name="InorOutFrom">
+					<option value="Outside">Outside</option>
+					<option value="Inside">Inside</option>
+				</select>
+				<select class="Yardline" name="YardlineFrom">
+					<option value="">(Yardline)</option>
+					<option value="50">50</option>
+					<option value="45">45</option>
+					<option value="40">40</option>
+					<option value="35">35</option>
+					<option value="30">30</option>
+					<option value="25">25</option>
+					<option value="20">20</option>
+					<option value="15">15</option>
+					<option value="10">10</option>
+					<option value="5">5</option>
+					<option value="0">0</option>
+				</select>
+				<br>
+				<input type="text" name="VerticalStepsFrom"  placeholder="Steps">
+				<select class="RelativeVertical" name="RelativeVert">
+					<option value="BackSide">Back Sideline</option>
+					<option value="BackHash">Back Hash</option>
+					<option value="FrontHash">Front Hash</option>
+					<option value="FrontSide">Front Sideline</option>
+				</select>
+			</div>
+
+			<div class="WordTo">
+				To
+			</div>
+
+			<div class="MarchTo">
+				<select class="Side"  name="SideTo">
+					<option value="left">Stage Left</option>
+					<option value="right">Stage Right</option>
+				</select>
+				<input type="text" name="HorizontalStepTo" placeholder="Steps">
+				<select class="RelativeYardline" name="InorOutTo">
+					<option value="Outside">Outside</option>
+					<option value="Inside">Inside</option>
+				</select>
+				<select class="Yardline" name="YardlineTo">
+					<option value="">(Yardline)</option>
+					<option value="50">50</option>
+					<option value="45">45</option>
+					<option value="40">40</option>
+					<option value="35">35</option>
+					<option value="30">30</option>
+					<option value="25">25</option>
+					<option value="20">20</option>
+					<option value="15">15</option>
+					<option value="10">10</option>
+					<option value="5">5</option>
+					<option value="0">0</option>
+				</select>
+				<br>
+				<input type="text" name="VerticalStepsTo" placeholder="Steps">
+				<select class="RelativeVertical" name="RelativeVertTo">
+					<option value="BackSide">Back Sideline</option>
+					<option value="BackHash">Back Hash</option>
+					<option value="FrontHash">Front Hash</option>
+					<option value="FrontSide">Front Sideline</option>
+				</select>
+			</div>
+		</div>
+
+		
+	</body>
+</html>

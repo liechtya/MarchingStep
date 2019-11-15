@@ -1,0 +1,47 @@
+body {
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 50px;
+	padding: 0px;
+	font-weight: lighter;
+	background-color: Black;
+	text-align: center;
+}
+
+header a {
+	color: White;
+	text-decoration: none;
+	height: 35px;
+	margin-left: 10px;
+	font-size: 30px;
+	padding: 12.5px;
+}
+
+header a:hover {
+	text-decoration: underline;
+}
+
+.Flexy {
+	display: flex;
+	margin: 8px;
+}
+
+header .Flexy {
+	margin: 0px;
+}
+
+.MarchFrom {
+	margin: 5px;
+}
+
+.MarchTo {
+	margin: 5px;
+}
+
+.WordTo {
+	text-align: center;
+}

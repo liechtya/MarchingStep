@@ -1,28 +1,31 @@
 <html>
 	<head>
 		<title>Marching Step Calculator</title>
+		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="public.css">
+		<script type="text/javascript" src="Calculator.js"></script>
+
+		</script>
 	</head>
 	<body>
-		<header>
-			<div class="Flexy">
-				<a href="#">Home</a>
-				<a href="./about.html">About</a>
-			</div>
-		</header>
-
 		<div class="Flexy">
 			<div class="MarchFrom">
-				<select class="Side"  name="SideFrom">
+				<select class="Side"
+				 id="SideFrom">
 					<option value="left">Stage Left</option>
 					<option value="right">Stage Right</option>
 				</select>
-				<input type="text" name="HorizontalStepFrom"  placeholder="Steps">
-				<select class="RelativeYardline" name="InorOutFrom">
+				<input type="text"
+				class="HorizontalStep"
+				id="HorizontalStepFrom" name="HorizontalStepFrom"  placeholder="Steps">
+				<select class="RelativeYardline"
+				id="RelativeYardlineFrom" name="InorOutFrom">
+					<option value="On">On</option>
 					<option value="Outside">Outside</option>
 					<option value="Inside">Inside</option>
 				</select>
-				<select class="Yardline" name="YardlineFrom">
+				<select class="Yardline"
+				id="YardlineFrom" name="YardlineFrom">
 					<option value="">(Yardline)</option>
 					<option value="50">50</option>
 					<option value="45">45</option>
@@ -37,12 +40,17 @@
 					<option value="0">0</option>
 				</select>
 				<br>
-				<input type="text" name="VerticalStepsFrom"  placeholder="Steps">
-				<select class="RelativeVertical" name="RelativeVert">
-					<option value="BackSide">Back Sideline</option>
-					<option value="BackHash">Back Hash</option>
-					<option value="FrontHash">Front Hash</option>
-					<option value="FrontSide">Front Sideline</option>
+				<input type="text"
+				class="VerticalSteps"
+				id="VerticalStepsFrom" name="VerticalStepsFrom"  placeholder="Steps">
+				<select
+				class="RelativeVertical" id="RelativeVerticalFrom" name="RelativeVertFrom">
+					<option value="BackSide">In Front of Back Sideline</option>
+					<option value="BehindBackHash">Behind of Back Hash</option>
+					<option value="FrontBackHash">In front of Back Hash</option>
+					<option value="BehindFrontHash">Behind of Front Hash</option>
+					<option value="FrontFrontHash">In Front of Front Hash</option>
+					<option value="FrontSide">Behind Front Sideline</option>
 				</select>
 			</div>
 
@@ -51,16 +59,19 @@
 			</div>
 
 			<div class="MarchTo">
-				<select class="Side"  name="SideTo">
+				<select class="Side"
+				id="SideTo" name="SideTo">
 					<option value="left">Stage Left</option>
 					<option value="right">Stage Right</option>
 				</select>
-				<input type="text" name="HorizontalStepTo" placeholder="Steps">
-				<select class="RelativeYardline" name="InorOutTo">
+				<input type="text"
+				class="HorizontalStep" id="HorizontalStepTo" placeholder="Steps">
+				<select class="RelativeYardline" id="InorOutTo">
+					<option value="On">On</option>
 					<option value="Outside">Outside</option>
 					<option value="Inside">Inside</option>
 				</select>
-				<select class="Yardline" name="YardlineTo">
+				<select class="Yardline" id="YardlineTo">
 					<option value="">(Yardline)</option>
 					<option value="50">50</option>
 					<option value="45">45</option>
@@ -75,16 +86,19 @@
 					<option value="0">0</option>
 				</select>
 				<br>
-				<input type="text" name="VerticalStepsTo" placeholder="Steps">
-				<select class="RelativeVertical" name="RelativeVertTo">
-					<option value="BackSide">Back Sideline</option>
-					<option value="BackHash">Back Hash</option>
-					<option value="FrontHash">Front Hash</option>
-					<option value="FrontSide">Front Sideline</option>
+				<input type="text"
+				class="VerticalSteps" id="VerticalStepsTo" placeholder="Steps">
+				<select class="RelativeVertical" id="RelativeVertTo">
+					<option value="BackSide">In Front of Back Sideline</option>
+					<option value="BehindBackHash">Behind of Back Hash</option>
+					<option value="FrontBackHash">In Front of Back Hash</option>
+					<option value="BehindFrontHash">Behind of Front Hash</option>
+					<option value="FrontFrontHash">In Front of Front Hash</option>
+					<option value="FrontSide">Behind Front Sideline</option>
 				</select>
 			</div>
 		</div>
-
-		
+		<input type="text" id="count" placeholder="Count">
+		<button type="button" onclick="CalculateStep()" id="Calculate">Calculate </button>
 	</body>
 </html>

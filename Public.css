@@ -12,6 +12,15 @@ header {
 	text-align: center;
 }
 
+header div {
+	color: White;
+	text-align: left;
+	font-weight: 700;
+	font-size: 30px;
+	padding: 12.5px;
+
+}
+
 header a {
 	color: White;
 	text-decoration: none;
@@ -44,4 +53,9 @@ header .Flexy {
 
 .WordTo {
 	text-align: center;
+	align-items: center;
+}
+
+#countContainer {
+	margin: 10px;
 }

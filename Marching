@@ -8,6 +8,9 @@
 		</script>
 	</head>
 	<body>
+		<header>
+			<div>Steps Calculator</div>
+		</header>
 		<div class="Flexy">
 			<div class="MarchFrom">
 				<select class="Side"
@@ -98,7 +101,10 @@
 				</select>
 			</div>
 		</div>
-		<input type="text" id="count" placeholder="Count">
-		<button type="button" onclick="CalculateStep()" id="Calculate">Calculate </button>
+		<div id="countContainer">
+			<input type="text" id="count" placeholder="Count">
+			<button type="button" onclick="CalculateStep()" id="Calculate">Calculate </button>
+		</div>
+		
 	</body>
 </html>
